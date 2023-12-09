@@ -11,7 +11,7 @@ pipeline {
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/DoingsLLC/argo-rollout-nodejs.git'
+           git branch: 'main', url: 'https://github.com/DoingsLLC/argo-rollout-blue-green.git'
             }
         }
         // run sonarqube test
