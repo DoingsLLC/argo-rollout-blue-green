@@ -5,7 +5,7 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('Doings_Docker_token')
     APP_NAME = "ooghenekaro/bluegreen-rollout-oct"
     }
     stages { 
