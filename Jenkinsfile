@@ -47,7 +47,7 @@ pipeline {
         }
         stage('Trigger ManifestUpdate') {
              steps{
-                build job: 'rollout-manifests', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]     
+                build job: '09rollout-manifests-blue-green', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]     
 
             } 
            } 
